@@ -179,6 +179,19 @@ header {
 
 .features_get h2 {
     margin-bottom: 20px;
+    position: relative;
+    margin-left: 20px;
+    width: 60%;
+}
+
+.features_get h2::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 5px solid #FF900E;
 }
 
 .features_get>p {
@@ -421,6 +434,10 @@ form .btn button {
         width: 500px;
     }
 
+    .features_get h2 {
+        width: 100%;
+    }
+
     .facts_list {
         gap: 20px;
     }
@@ -459,6 +476,11 @@ form .btn button {
     .features_get>h2,
     .features_get>p {
         text-align: center;
+    }
+
+    .features_get h2::after {
+        width: 0;
+        height: 0;
     }
 
     .feature_get,
